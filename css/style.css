@@ -67,6 +67,9 @@ img {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
 
 .logo {
   width: 177px;
@@ -128,6 +131,8 @@ img {
   line-height: 18px;
   color: #333333;
 }
+
+
 
 .breadcrumb-list__item {
   font-size: 10px;
@@ -978,15 +983,60 @@ img {
     width: 92%;
   }
 
+  body {
+    padding-top: 78px;
+  }
+
+  .navbar--mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .navbar__search--mobile_hidden, .navbar__user--mobile_hidden {
+    display: none;
+  }
+
+  .navbar__search--mobile_visible, .navbar__user--mobile_visible {
+    display: flex;
+  }
+
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
 
-  .navbar__search,
-  .navbar-menu,
-  .navbar__user {
+  .navbar-bottom {
     display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+  }
+
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+
+  .navbar-menu__item--mobile_visible {
+    display: block;
+  }
+
+  .navbar-bottom--visible {
+    display: block;
   }
 
   .menu-button {
@@ -1006,6 +1056,12 @@ img {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .stars {

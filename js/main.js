@@ -20,3 +20,9 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 });
+
+let menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', function() {
+console.log('Кнопка нажата');
+document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible'); //проверяет есть ли такой класс на нашем элементе, если нет, то добавляет, нет нет, то удаляет
+});
