@@ -363,8 +363,9 @@
             </a>
             <h3 class="modal__title  modal__title--mb3">Booking</h3>
                     <form action="#" class="modal__form">
-                        <input type="text" class="input modal__input" placeholder="Your Full Name*">
-                        <input type="text" class="input modal__input" placeholder="Phone Number*">
+                        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="firstname">
+                        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+                        <input type="text" class="input modal__input" placeholder="Email" name="email">
                         <textarea class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="button modal__button" type="submit">Send</button>
                         <span class="modal__info">* Required Fields</span>
@@ -373,6 +374,7 @@
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

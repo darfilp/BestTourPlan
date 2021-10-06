@@ -1,4 +1,4 @@
-
+$(document).ready(function () {
   const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
@@ -50,5 +50,25 @@ function closeModal(event) {
   modalOverlay.classList.remove('modal__overlay--visible');
   modalDialog.classList.remove('modal__dialog--visible');
 }
+
+//Обработка форм
+$('.modal__form').validate({
+  messages: {
+    name: {
+      required: "Please specify your name",
+      minlenght: 
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "We need your phone address to contact you",
+    },
+  }
+});
+
+});
+  
 
 
